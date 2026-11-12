@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Menu of Brew & Bite Café: coffee, snacks and desserts.">
+  <title>Brew & Bite Café | Menu</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">☕ Brew &amp; Bite</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+          <li class="nav-item active"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#reviews">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header text-center text-white">
+    <div class="container">
+      <h1 class="font-weight-bold">Our Menu</h1>
+      <p class="lead mb-0">Freshly made, fairly priced.</p>
+    </div>
+  </header>
+
+  <main class="container py-5">
+
+    <!-- Search / filter -->
+    <div class="form-group">
+      <input type="text" id="menuSearch" class="form-control" placeholder="Search the menu (e.g. coffee, sandwich)...">
+    </div>
+
+    <h2 class="section-title mt-4">Coffee &amp; Drinks</h2>
+    <div class="table-responsive">
+      <table class="table table-hover menu-table">
+        <caption class="sr-only">Coffee and drinks menu</caption>
+        <thead>
+          <tr><th>Item</th><th>Description</th><th class="text-right">Price</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Espresso</td><td>Strong and bold single shot</td><td class="text-right">₹80</td></tr>
+          <tr><td>Cappuccino</td><td>Espresso with steamed milk foam</td><td class="text-right">₹110</td></tr>
+          <tr><td>Cold Coffee</td><td>Chilled, creamy, with ice cream</td><td class="text-right">₹120</td></tr>
+          <tr><td>Masala Chai</td><td>Classic Indian tea with spices</td><td class="text-right">₹40</td></tr>
+          <tr><td>Lemon Iced Tea</td><td>Refreshing and light</td><td class="text-right">₹90</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="section-title mt-5">Snacks</h2>
+    <div class="table-responsive">
+      <table class="table table-hover menu-table">
+        <caption class="sr-only">Snacks menu</caption>
+        <thead>
+          <tr><th>Item</th><th>Description</th><th class="text-right">Price</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Grilled Sandwich</td><td>Veggies and cheese, toasted</td><td class="text-right">₹90</td></tr>
+          <tr><td>Veg Burger</td><td>Crispy patty with fresh toppings</td><td class="text-right">₹100</td></tr>
+          <tr><td>French Fries</td><td>Salted and crispy</td><td class="text-right">₹80</td></tr>
+          <tr><td>Pasta</td><td>White or red sauce</td><td class="text-right">₹150</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="section-title mt-5">Desserts</h2>
+    <div class="table-responsive">
+      <table class="table table-hover menu-table">
+        <caption class="sr-only">Dessert menu</caption>
+        <thead>
+          <tr><th>Item</th><th>Description</th><th class="text-right">Price</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Chocolate Brownie</td><td>Warm and gooey</td><td class="text-right">₹110</td></tr>
+          <tr><td>Cheesecake Slice</td><td>Creamy classic</td><td class="text-right">₹140</td></tr>
+          <tr><td>Ice Cream Scoop</td><td>Vanilla, chocolate or strawberry</td><td class="text-right">₹60</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p id="noResults" class="text-center text-muted d-none">No items found.</p>
+  </main>
+
+  <footer class="site-footer text-center">
+    <div class="container">
+      <p class="mb-1">Open daily: 8:00 AM – 10:00 PM</p>
+      <p class="mb-0">&copy; 2026 Brew &amp; Bite Café. Demo project.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

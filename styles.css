@@ -1,0 +1,156 @@
+/* ---------- Theme variables ---------- */
+:root {
+  --brown-dark: #3e2723;
+  --brown: #6d4c41;
+  --accent: #d98c4a;
+  --cream: #fff8f0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #333;
+  padding-top: 56px; /* space for fixed navbar */
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  background-color: var(--brown-dark);
+}
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .active > .nav-link {
+  color: var(--accent);
+}
+
+/* ---------- Hero & page headers ---------- */
+.hero {
+  min-height: 85vh;
+  background: linear-gradient(rgba(62, 39, 35, 0.75), rgba(62, 39, 35, 0.75)),
+              linear-gradient(135deg, #6d4c41, #d98c4a);
+}
+.page-header {
+  padding: 60px 0;
+  background: linear-gradient(135deg, var(--brown-dark), var(--brown));
+}
+
+/* ---------- Buttons ---------- */
+.btn-accent {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.btn-accent:hover {
+  background-color: #c27a3a;
+  border-color: #c27a3a;
+  color: #fff;
+}
+
+/* ---------- Sections ---------- */
+.section-title {
+  color: var(--brown-dark);
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 10px;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--accent);
+  margin-top: 8px;
+}
+.section-title.text-center::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+.stat {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* ---------- Cards ---------- */
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12) !important;
+}
+.card-emoji {
+  font-size: 4rem;
+  padding: 25px 0 5px;
+  background: var(--cream);
+  border-radius: 12px 12px 0 0;
+}
+.price {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+/* ---------- Reviews ---------- */
+.review {
+  background: var(--cream);
+  border-left: 4px solid var(--accent);
+  padding: 20px;
+  border-radius: 6px;
+  font-style: italic;
+  height: 100%;
+}
+.review footer {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  font-style: normal;
+  color: var(--brown);
+}
+
+/* ---------- Menu tables ---------- */
+.menu-table thead th {
+  background: var(--brown-dark);
+  color: #fff;
+  border: none;
+}
+.menu-table td {
+  vertical-align: middle;
+}
+.menu-table td:first-child {
+  font-weight: 600;
+}
+
+/* ---------- Contact ---------- */
+.contact-info li {
+  margin-bottom: 12px;
+}
+.map-placeholder {
+  height: 220px;
+  background: #eee;
+  border: 2px dashed #bbb;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  text-align: center;
+  padding: 10px;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--brown-dark);
+  color: #fff;
+  padding: 25px 0;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 576px) {
+  .hero h1 { font-size: 2.2rem; }
+  .hero .btn { display: block; margin: 10px auto; max-width: 220px; }
+}
