@@ -2,6 +2,9 @@
 
 A responsive 3-page website for a small café, built as a portfolio project.
 
+## Live Demo
+https://tamboliaman974-droid.github.io/cafe-website/
+
 ## Features
 - Responsive layout using Bootstrap 4 (works on mobile, tablet, desktop)
 - Home page with hero section, about, customer favourites and reviews
@@ -31,13 +34,7 @@ A responsive 3-page website for a small café, built as a portfolio project.
 
 No installation needed.
 
-## Live Demo
-Add your GitHub Pages link here after deploying.
 
-## Note
-The reservation form currently validates input in the browser only. To receive real submissions, connect it to a service such as Formspree or Netlify Forms.
 
 ## Author
 Aminuddin A. Tamboli, SYBSc Computer Science student
-## link of our website
-https://tamboliaman974-droid.github.io/cafe-website/index.html
